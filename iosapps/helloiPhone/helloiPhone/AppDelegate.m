@@ -12,7 +12,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    NSLog(@"Hello iPhone");
+    NSLog(@"Hello iOS");
     return YES;
 }
 							
