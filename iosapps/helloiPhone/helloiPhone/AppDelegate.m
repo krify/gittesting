@@ -12,7 +12,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+<<<<<<< HEAD
+    NSLog(@"Hello iPhone");
+=======
+    NSLog(@"Hello iOS");
+>>>>>>> 4274261a0a98b19810c4739a30cbceee6d84eff4
     return YES;
 }
 							
