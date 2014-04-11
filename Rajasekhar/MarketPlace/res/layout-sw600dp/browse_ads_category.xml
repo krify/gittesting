@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_header"
+        android:orientation="horizontal" >
+
+        <RelativeLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            
+            >
+        <TextView
+            android:id="@+id/browse_ads_category_titlebar_tv"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:layout_centerInParent="true"
+            android:text="Browse ads"
+            android:textColor="#fff"
+            android:textSize="50sp" />
+
+        <ImageView
+            android:id="@+id/browse_ads_category_settings_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/tab_settings" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#12059E" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_header"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/browse_ads_category_placed_today_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_placedtoday" />
+
+        <ImageView
+            android:id="@+id/browse_ads_category_category_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tab_category_selected" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#808080" >
+
+        <ListView
+            android:id="@+id/browse_ads_category_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingBottom="80dp"
+            android:divider="#249eab"
+            android:dividerHeight="1dp"
+            android:layout_weight="1"
+            android:fadingEdge="none"
+            android:scrollbars="none" >
+        </ListView>
+
+        <include layout="@layout/bottombar" />
+    </RelativeLayout>
+
+</LinearLayout>

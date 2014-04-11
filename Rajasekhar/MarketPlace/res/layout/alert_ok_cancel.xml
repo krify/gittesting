@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" 
+    android:background="#D9DFDF"
+    >
+    <TextView
+        android:id="@+id/alert_ok_cancel_message_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        />
+     <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#9A9E9F" />
+       <LinearLayout 
+     
+      android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="1"
+    android:background="#D9DFDF"
+     >
+     
+          <TextView
+        android:id="@+id/alert_ok_cancel_cancel_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" Cancel "
+        android:layout_gravity="center"
+        android:textColor="#137FFB"
+        android:textSize="20dp"
+        android:layout_weight="0.5"
+         />
+ 
+         
+        
+         <View
+            android:layout_width="2dp"
+            android:layout_height="fill_parent"
+            android:background="#9A9E9F" />
+
+          <TextView
+              android:id="@+id/alert_ok_cancel_ok_tv"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_weight="0.5"
+               android:textSize="20dp"
+               android:layout_gravity="center"
+              android:gravity="center"
+              android:padding="5dp"
+              android:text="Ok"
+             
+              android:textColor="#137FFB" />
+         
+         />
+     
+     
+ </LinearLayout> 
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MarketPlace</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	 <string name="email_content" formatted ="false">
+	   <Data>  
+	     <![CDATA[
+	     <!DOCTYPE html>
+	     
+	     	<html lang=\'en-US\'>
+	<header> 
+
+		<title>Enquiry Form</title>
+		<style> 
+		.container{
+
+			width:350px;
+			height:350px;
+			border:3px solid #018DAE;
+			margin:20px auto;
+		}
+.wrap {
+background: #aaa;
+padding: 20px;
+width: 531px;
+margin: 0px auto;
+}
+body > div > table.c {
+margin-left: 70px;
+}
+body > div > table.c tr td {padding: 2px 20px; }
+
+body > div > div > table > tbody > tr  td {
+padding: 2px 33px;
+}
+ 
+		</style>
+	</header>
+	<body> 
+	<div class="container">
+	<pre> 
+ <p style="font-family: serif;font-size: 16px;margin-left:40px"> Hi raja, 
+
+         You got a enquiry from one of the laxani market place user for the following Ad:</p>  </pre>
+
+      <div class="wrap">   <table>
+
+         			<tr><td style="font-weight:bold;">Title </td> <td>email_title</td>  </tr>
+
+         			<tr><td style="font-weight:bold;">Description </td> <td>email_description</td>  </tr>
+         			<tr><td style="font-weight:bold;">Category </td> <td>email_category</td>  </tr>
+         			<tr><td style="font-weight:bold;">Price</td> <td>email_price</td>  </tr>
+         			<tr><td style="font-weight:bold;">Posted On </td> <td>email_posted_on</td>  </tr>
+
+
+           </table> </div>
+           <p style="margin-left:70px;"> Here is the message from the user  </p>
+
+            <table class="c">
+
+         			<tr><td style="font-weight:bold;">User Comment </td> <td>some Text</td>  </tr>
+
+         			<tr><td style="font-weight:bold;">User Name </td> <td>some Text </td>  </tr>
+         			<tr><td style="font-weight:bold;">User PhoneNumber </td> <td>some Text </td>  </tr>
+         			 
+
+
+           </table>
+
+ </div>
+	</body>
+
+
+	</html>
+	     
+	     
+	     ]]>
+	     </Data>
+	      </string>
+	     
+	     
+	     
+	     
+</resources>

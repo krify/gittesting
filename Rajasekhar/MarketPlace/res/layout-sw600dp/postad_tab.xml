@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+ <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        
+         >
+    <LinearLayout
+        android:id="@+id/post_ad_title_bar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_header"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/post_ad_titlebar_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:text="Place Ad"
+                android:textColor="#fff"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/post_ad_postad_icon_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/tab_done" />
+        </RelativeLayout>
+    </LinearLayout>
+<ScrollView 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    android:fadingEdge="none"
+    android:layout_below="@+id/post_ad_title_bar_ll"
+    
+    >
+    <LinearLayout 
+        
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tab_bg"
+        >
+    <LinearLayout
+        android:id="@+id/post_ad_content_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        
+        android:layout_below="@+id/post_ad_title_bar_ll"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/post_ad_content_title_tv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:text="Title"
+                    android:textColor="#05949E"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:layout_marginLeft="10dp"
+                    android:text=":"
+                    android:textColor="#28F1C2"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/post_ad_content_title_status_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/tab_settings_line"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/post_ad_content_description_tv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:text="Description"
+                    android:textColor="#05949E"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="12"
+                    android:text=":"
+                    android:textColor="#28F1C2"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/post_ad_content_description_status_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/tab_settings_line"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_gravity="fill_horizontal"
+                android:gravity="center_horizontal"
+                android:padding="20dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/post_ad_image_upload_one"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                   
+                    android:layout_gravity="center"
+                    android:src="@drawable/tab_upload" />
+
+                <ImageView
+                    android:id="@+id/post_ad_image_upload_middlebar_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tab_uploadboarder" />
+
+                <ImageView
+                    android:id="@+id/post_ad_image_upload_two"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tab_upload" />
+
+                <ImageView
+                    android:id="@+id/post_ad_image_upload_middlebar_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tab_uploadboarder" />
+
+                <ImageView
+                    android:id="@+id/post_ad_image_upload_three"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/tab_upload" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_settings_line"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:weightSum="5"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:text="Note"
+                    android:textColor="#05949E"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:text=":"
+                    android:textColor="#28F1C2"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:paddingLeft="10dp"
+                    android:text="You have to upload atleast one image"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_settings_line"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                  <TextView
+                    android:id="@+id/post_ad_content_category_id_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLength="12"
+                    android:textColor="#05949E"
+                    android:visibility="gone"
+                    android:textSize="25sp" />
+                <TextView
+                    android:id="@+id/post_ad_content_category_tv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLength="12"
+                    android:text="Category"
+                    android:textColor="#05949E"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLength="12"
+                    android:text=":"
+                    android:textColor="#28F1C2"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/post_ad_content_category_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_settings_line"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:id="@+id/post_ad_content_location_tv"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:text="Location"
+                    android:textColor="#05949E"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLength="12"
+                    android:text=":"
+                    android:textColor="#28F1C2"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/post_ad_content_location_status_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/tab_settings_line"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_settings_line"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Select Currency"
+                    android:textColor="#05949E"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLength="12"
+                    android:text=":"
+                    android:textColor="#28F1C2"
+                    android:textSize="25sp" />
+
+                <Spinner
+                    android:id="@+id/post_ad_content_select_currency_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_settings_line"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal"
+                android:padding="10dp" >
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:maxLength="12"
+                    android:text="price"
+                    android:textColor="#05949E"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:maxLength="12"
+                    android:text=":"
+                    android:textColor="#28F1C2"
+                    android:textSize="25sp" />
+
+                <EditText
+                    android:id="@+id/post_ad_content_price_status_et"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:drawableBottom="@drawable/tab_settings_line"
+                    android:paddingLeft="10dp"
+                    android:inputType="number"
+                    android:textColor="#000"
+                    android:textSize="25sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@drawable/tab_settings_line"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+        </LinearLayout>
+        
+   
+    </LinearLayout>
+
+</LinearLayout>
+    
+    
+</ScrollView>
+ 
+   <include layout="@layout/bottombar" />   
+    </RelativeLayout>
+</LinearLayout>

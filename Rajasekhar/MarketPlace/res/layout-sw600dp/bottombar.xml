@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/bottombar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/bottombar_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_tabbg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/botombar_browse_ads_tab_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/tab_browseads" />
+
+        <ImageView
+            android:id="@+id/botombar_post_ads_tab_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+           android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/tab_placedads" />
+
+        <ImageView
+            android:id="@+id/botombar_manage_listing_tab_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:src="@drawable/tab_managelistings" />
+
+    
+    </LinearLayout>
+
+</RelativeLayout>

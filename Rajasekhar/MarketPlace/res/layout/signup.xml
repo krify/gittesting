@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurbg"
+    android:orientation="vertical" >
+    
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+    <RelativeLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            
+            >
+
+        <ImageView
+            android:id="@+id/signup_cancel_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cancel" />
+
+        <TextView
+            android:id="@+id/signup_titlebar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="Laxani Market Place"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+        </RelativeLayout>
+      
+    </LinearLayout>
+    
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/signup_white_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/signup_uname_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Username"
+            android:inputType="textEmailAddress"
+             android:padding="4dp"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+
+        <EditText
+            android:id="@+id/signup_email_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="4dp"
+            android:textSize="20sp" />
+        
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+
+        <EditText
+            android:id="@+id/signup_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="4dp"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#c0c0c0" />
+
+        <EditText
+            android:id="@+id/signup_phone_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:padding="4dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+    
+<ImageView
+        android:id="@+id/signup_signup_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:src="@drawable/signup" />
+</LinearLayout>

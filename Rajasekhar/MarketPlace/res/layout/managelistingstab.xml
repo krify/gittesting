@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        android:gravity="center"
+        android:orientation="horizontal" >
+<RelativeLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            
+            >
+        <TextView
+            android:id="@+id/manage_listings_titlebar_tv"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+             android:layout_centerInParent="true"
+            android:text="Manage Listings"
+            android:textColor="#fff"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/manage_listings_settings_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/settings" />
+        </RelativeLayout>
+
+       </LinearLayout>
+    <View
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:background="#12059E" />
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        >
+<TextView 
+    android:id="@+id/manage_listing_post_ads_status_tv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:visibility="gone"
+    
+    />
+    <ListView
+        android:id="@+id/manage_listings_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:scrollbars="none"
+        android:fadingEdge="none"
+        android:dividerHeight="8dp"
+        android:paddingBottom="50dp"
+        android:layout_weight="1" >
+    </ListView>
+    <include layout="@layout/bottombar"/>
+    </RelativeLayout>
+    
+</LinearLayout>

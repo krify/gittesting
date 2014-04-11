@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blurbg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/header"
+        
+        android:orientation="horizontal" >
+
+        <RelativeLayout 
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+            
+            >
+
+        <ImageView
+            android:id="@+id/login_cancel_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/cancel" />
+
+        <TextView
+            android:id="@+id/login_titlebar_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Laxani Market Place"
+            android:textColor="#fff"
+            android:textSize="22sp" />
+        </RelativeLayout>
+       
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/settings_white_bg"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/login_uname_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            
+            android:textSize="20sp" />
+<!-- android:text="vij@gmail.com" android:text="vijaya" -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/settings_line" />
+
+        <EditText
+            android:id="@+id/login_password_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/login_login_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="15dp"
+        android:src="@drawable/login" />
+
+    <ImageView
+        android:id="@+id/login_forgotPassword_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:src="@drawable/fgp" />
+
+    
+
+</LinearLayout>
