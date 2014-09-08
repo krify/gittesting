@@ -1,3 +1,5 @@
 $ cat .gitignore
 *.[oa]
 *~
+# adding local files to ignore list
+/*.txt

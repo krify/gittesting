@@ -1,0 +1,9 @@
+<?php
+echo "this is my new file agin saving to test push 2nd trail";
+echo "this is third trail";
+echo "this is forth  trail";
+<<<<<<< HEAD
+echo "this is fifth  trail";
+=======
+>>>>>>> f980030f703161bba8e8844a4f2ffad60f81ba25
+?>
